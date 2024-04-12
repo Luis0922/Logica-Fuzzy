@@ -1,0 +1,106 @@
+# sciFLT scilab Fuzzy Logic Toolbox
+<REVISION>
+ <revision>@REV@
+
+<DESCRIPTION>
+ <name>Controle de frenagem
+ <comment>Laboratorio de IA - Exercicio 2 - Logica Fuzzy
+ <type>m
+ <SNorm>max
+ <SNormPar>0
+ <TNorm>min
+ <TNormPar>0
+ <Comp>yager
+ <CompPar>0
+ <ImpMethod>min
+ <AggMethod>max
+ <defuzzMethod>centroide
+
+<INPUT>
+ <name>Distancia
+ <range>0 100
+  <mf_name>Muito pequena
+   <mf_type>trimf
+   <mf_par>-15 0 15
+  <mf_name>Pequena
+   <mf_type>trimf
+   <mf_par>10 20 30
+  <mf_name>Media
+   <mf_type>trimf
+   <mf_par>24 47 63
+  <mf_name>Alta
+   <mf_type>trimf
+   <mf_par>59 78 94
+  <mf_name>Moderadamente Alta
+   <mf_type>trimf
+   <mf_par>89 93 110
+
+ <name>Velocidade
+ <range>0 100
+  <mf_name>Muito baixa
+   <mf_type>trimf
+   <mf_par>-20 0 15
+  <mf_name>Baixa
+   <mf_type>trimf
+   <mf_par>10 24 36
+  <mf_name>Moderada
+   <mf_type>trimf
+   <mf_par>31 48 57
+  <mf_name>Alta
+   <mf_type>trimf
+   <mf_par>52 75 88
+  <mf_name>Extremamente alta
+   <mf_type>trimf
+   <mf_par>82 96 110
+
+<OUTPUT>
+ <name>Frenagem
+ <range>0 100
+  <mf_name>Muito baixa
+   <mf_type>trimf
+   <mf_par>-5 5 15
+  <mf_name>Baixa
+   <mf_type>trimf
+   <mf_par>12 30 50
+  <mf_name>Moderada
+   <mf_type>trimf
+   <mf_par>46 63 72
+  <mf_name>Alta
+   <mf_type>trimf
+   <mf_par>69 86 92
+  <mf_name>Extremamente alta
+   <mf_type>trimf
+   <mf_par>88 100 120
+
+<RULE>
+1 1 4 1 1.0
+1 2 5 1 1.0
+1 3 5 1 1.0
+1 4 5 1 1.0
+1 5 5 1 1.0
+2 1 1 1 1.0
+2 2 2 1 1.0
+2 3 3 1 1.0
+2 4 4 1 1.0
+2 5 5 1 1.0
+3 1 1 1 1.0
+3 2 1 1 1.0
+3 3 2 1 1.0
+3 4 3 1 1.0
+3 5 4 1 1.0
+4 1 1 1 1.0
+4 2 1 1 1.0
+4 3 2 1 1.0
+4 4 3 1 1.0
+4 5 4 1 1.0
+5 1 1 1 1.0
+5 2 1 1 1.0
+5 3 1 1 1.0
+5 4 3 1 1.0
+5 5 4 1 1.0
+2 2 1 1 1.0
+2 3 2 1 1.0
+2 4 3 1 1.0
+3 3 1 1 1.0
+3 4 2 1 1.0
+
